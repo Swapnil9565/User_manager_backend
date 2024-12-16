@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-slate-900 text-white p-2">
+        <h1 class="text-3xl font-bold italic m-3">User Form</h1>
+        <form action="/create" method="post" class="flex m-3 flex-col">
+            <input type="text" placeholder="Username" name="username" class="px-1 py-2 rounded-md outline-none w-1/2 text-black" required><br>
+            <input type="text" placeholder="Email" name="email" class="px-1 py-2 rounded-md outline-none w-1/2 text-black" required><br>
+            <input type="text" placeholder="Image URL" name="userImgUrl" class="px-1 py-2 rounded-md outline-none w-1/2 text-black" required><br>
+            <input type="submit" value="Create User" class="p-2 rounded-md bg-violet-800 w-24 cursor-pointer">
+        </form>
+    </div>
+</body>
+</html>
